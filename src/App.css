@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e8e6df;
+  color: #101b34;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.col-1, .col-2 {
+  border: 1px solid #101b34;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.info-form, .info-display {
+  background-color: #d1cdc0;
+  border: 1px solid #101b34;
+  border-radius: 3px;
+  padding: 20px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-form h1 {
+  font-size: 1.5rem;
+}
+.info-form p {
+  display: flex;
+  margin: 15px 0;
+}
+.info-form p label {
+  padding: 5px;
+  width: 100px;
+}
+.info-form p input, .info-form p textarea {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+.info-form p textarea {
+  resize: none;
+}
+.info-form p button {
+  background-color: #101b34;
+  border: none;
+  border-radius: 3px;
+  color: #e8e6df;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  padding: 7px 15px;
+}
+.info-form p button:hover {
+  background-color: #e8e6df;
+  border: 1px solid #101b34;
+  color: #101b34;
+}
+
+.info-display {
+  display: none;
+}
+.info-display h1 {
+  font-size: 1.5rem;
+}
+.info-display p {
+  margin: 15px 0;
 }
